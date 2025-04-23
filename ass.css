@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #B7ADEB;
+}
+
+.testimonials {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #06065c;
+}
+
+.filter button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #5C44BF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background: #fadab7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, opacity 0.5s;
+    width: 250px;
+}
+
+.testimonial-card img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.filter button:hover{
+    transform: scale(1.05);
+    color: rgb(220, 220, 220);
+    background-color: #180859;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    background-color: #f4bd83;
+}
+
+.hidden {
+    display: none;
+    transform: translateY(20px);   
+}
+
+p{
+    color: #1E1E63 ;
+}
+
+.rating {
+    font-size: 20px;
+    color:chocolate;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #B7ADEB;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5C44BF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #180859;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.filter button:active {
+    animation: pulse 0.2s ease-in-out;
+}
+
+
